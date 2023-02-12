@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Zr5B+wfqKOTW9gEDhtbeaFqKEQc2d+aQjuUznfviqhlV31IxXpRZLmsegzX9eILQmpvffZCvVGF5Tv3qRhBFpw==",
+  "success": true,
+  "projectFilePath": "D:\\VisualStudioProjects\\BusHandleStructure\\UseCase\\UseCase.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tatuj\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
