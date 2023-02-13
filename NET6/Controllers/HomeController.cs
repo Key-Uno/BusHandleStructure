@@ -1,19 +1,28 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using NET6.Models;
 using System.Diagnostics;
+using UseCase.Config;
 
 namespace NET6.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
+        private readonly UseCaseBus _bus;
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(UseCaseBus bus, ILogger<HomeController> logger)
+            : base(bus)
         {
+            _bus = bus;
             _logger = logger;
         }
 
         public IActionResult Index()
+        {
+            return View();
+        }
+
+        public IActionResult Login()
         {
             return View();
         }
