@@ -1,5 +1,4 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using System;
 using UseCase.Core;
 
 namespace UseCase.Config
@@ -20,14 +19,12 @@ namespace UseCase.Config
             return bus;
         }
 
-        public IServiceCollection RegisterUseCase<TRequest, TImplement>()
+        public void RegisterUseCase<TRequest, TImplement>()
             where TRequest : IRequest<IResponse>
             where TImplement : class, IUseCase<TRequest, IResponse>
         {
             _collection.AddSingleton<TImplement>();
             bus.Register<TRequest, TImplement>();
-
-            return _collection;
         }
     }
 }
